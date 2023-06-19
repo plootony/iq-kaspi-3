@@ -886,9 +886,8 @@ section:target {
   }
 
   .intro__mobile-media {
-    margin-top: 32px;
     display: flex;
-    width: 75%;
+    width: 90%;
   }
 
   .intro__mobile-media img {
@@ -914,7 +913,7 @@ section:target {
   }
 
   .intro__subtitle {
-    text-align: center;
+    margin-top: 32px;
   }
 
   .tab {

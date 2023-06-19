@@ -1,594 +1,993 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Интеграция 1С:УТ с Kaspi.Link – это точный контроль остатков, оперативная
+      обработка заказов, удобный анализ продаж.
+    </title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интеграция 1С:УТ с Kaspi.Link – это точный контроль остатков, оперативная обработка заказов, удобный анализ
-        продаж.</title>
+    <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
+  <body>
     <main class="main">
-        <header class="header is-fixed">
-            <div class="container">
-                <div class="header__body">
-                    <a href="/" class="logo">
-                        <img src="img/logo.png" alt="Логотип компании" width="55" height="55">
-                    </a>
-                    <nav>
-                        <ul class="header__menu">
-                            <li><a class="header__menu-item" href="#intro">Главная</a></li>
-                            <li><a class="header__menu-item" href="#product">Как это работает?</a></li>
-                            <li><a class="header__menu-item" href="#features">Почему мы?</a></li>
-                            <li><a class="header__menu-item" href="#review">Уже кто то купил?</a></li>
-                            <li><a class="header__menu-item" href="#prices">Тарифы</a></li>
-                            <li><a class="header__menu-item" href="#contacts">Подключить модуль</a></li>
-                        </ul>
-                    </nav>
-                    <button class="burger burger--dark"><span class="burger__line"></span></button>
-                </div><!-- header__body -->
-            </div><!-- container -->
-        </header><!-- header -->
-        <section class="intro" id="intro">
-            <div class="container">
-                <div class="intro__body">
-                    <div class="intro__info">
-                        <span class="welcome">Добро пожаловать в мир интернет-торговли</span>
-                        <h1 class="intro__title"><span class="marked-text">Модуль Kaspi.Link</span> <br> в твоей 1С</h1>
-                        <p class="intro__subtitle">Интеграция 1С:УТ с Kaspi.Link – это точный контроль остатков,
-                            оперативная обработка заказов, удобный анализ продаж.</p>
-                        <button class="btn btn--primary btn--intro">Подключить модуль</button>
-                    </div><!-- intro__info -->
-                    <div class="intro__media">
-                        <div class="intro__media-img"></div>
-                    </div><!-- intro__media -->
-                </div><!-- intro__body -->
-            </div><!-- container -->
-        </section><!-- intro -->
-        <section class="product" id="product">
-            <div class="container">
-                <div class="tab">
-                    <ul class="tab__list">
-                        <li class="tab__list-item"><i class="las la-tools"></i>Настройка</li>
-                        <li class="tab__list-item"><i class="las la-poll-h"></i>Карточки товаров</li>
-                        <li class="tab__list-item"><i class="las la-calculator"></i>Остатки и цены</li>
-                        <li class="tab__list-item"><i class="las la-stream"></i>Заказы Каспи в 1С</li>
-                        <li class="tab__list-item"><i class="las la-thumbs-up"></i>Отзывы покупателей</li>
-                        <li class="tab__list-item"><i class="las la-chart-pie"></i>Анализ продаж</li>
-                        <li class="tab__list-item"><i class="las la-robot"></i>Телеграмм-бот</li>
-                    </ul><!-- tab__list -->
-                    <div class="tab__items">
-                        <div class="tab__item">
-                            <div class="tab__item__info">
-                                <h2 class="tab__item-title">Облегченное заполнение первичных настроек в 1С</h2>
-                                <p class="paragraph">Возможность вести продажи в 1С с нескольких профилей Kaspi.kz</p>
-                                <p class="paragraph">Автоматическая загрузка справочников и классификаторов с портала
-                                    Kaspi.kz:</p>
-                                <ul>
-                                    <li>список городов</li>
-                                    <li>точки продаж</li>
-                                    <li>категории</li>
-                                    <li>характеристики категорий</li>
-                                </ul>
-                            </div><!-- tab__item__info -->
-                            <div class="tab__item-media">
+      <header class="header is-fixed">
+        <div class="container">
+          <div class="header__body">
+            <a href="/" class="logo">
+              <img
+                src="img/logo.png"
+                alt="Логотип компании"
+                width="55"
+                height="55"
+              />
+            </a>
+            <nav>
+              <ul class="header__menu">
+                <li><a class="header__menu-item" href="#intro">Главная</a></li>
+                <li>
+                  <a class="header__menu-item" href="#product"
+                    >Как это работает?</a
+                  >
+                </li>
+                <li>
+                  <a class="header__menu-item" href="#features">Почему мы?</a>
+                </li>
+                <li>
+                  <a class="header__menu-item" href="#review"
+                    >Уже кто то купил?</a
+                  >
+                </li>
+                <li><a class="header__menu-item" href="#prices">Тарифы</a></li>
+                <li>
+                  <a class="header__menu-item" href="#contacts"
+                    >Подключить модуль</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <button class="burger burger--dark">
+              <span class="burger__line"></span>
+            </button>
+          </div>
+          <!-- header__body -->
+        </div>
+        <!-- container -->
+      </header>
+      <!-- header -->
+      <section class="intro" id="intro">
+        <div class="container">
+          <div class="intro__body">
+            <div class="intro__info">
+              <span class="welcome"
+                >Добро пожаловать в мир интернет-торговли</span
+              >
+              <h1 class="intro__title">
+                <span class="marked-text">Модуль Kaspi.Link</span> <br />
+                в твоей 1С
+              </h1>
+              <p class="intro__subtitle">
+                Интеграция 1С:УТ с Kaspi.Link – это точный контроль остатков,
+                оперативная обработка заказов, удобный анализ продаж.
+              </p>
+              <button class="btn btn--primary btn--intro">
+                Подключить модуль
+              </button>
+            </div>
+            <!-- intro__info -->
+            <div class="intro__mobile-media">
+              <img src="/img/bg-new1.png" alt="Изображение мобильной версии" />
+            </div>
+            <div class="intro__media">
+              <div class="intro__media-img"></div>
+            </div>
+            <!-- intro__media -->
+          </div>
+          <!-- intro__body -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- intro -->
+      <section class="product" id="product">
+        <div class="container">
+          <div class="tab">
+            <ul class="tab__list">
+              <li class="tab__list-item">
+                <i class="las la-tools"></i>Настройка
+              </li>
+              <li class="tab__list-item">
+                <i class="las la-poll-h"></i>Карточки товаров
+              </li>
+              <li class="tab__list-item">
+                <i class="las la-calculator"></i>Остатки и цены
+              </li>
+              <li class="tab__list-item">
+                <i class="las la-stream"></i>Заказы Каспи в 1С
+              </li>
+              <li class="tab__list-item">
+                <i class="las la-thumbs-up"></i>Отзывы покупателей
+              </li>
+              <li class="tab__list-item">
+                <i class="las la-chart-pie"></i>Анализ продаж
+              </li>
+              <li class="tab__list-item">
+                <i class="las la-robot"></i>Телеграмм-бот
+              </li>
+            </ul>
+            <!-- tab__list -->
+            <div class="tab__items">
+              <div class="tab__item">
+                <div class="tab__item__info">
+                  <h2 class="tab__item-title">
+                    Облегченное заполнение первичных настроек в 1С
+                  </h2>
+                  <p class="paragraph">
+                    Возможность вести продажи в 1С с нескольких профилей
+                    Kaspi.kz
+                  </p>
+                  <p class="paragraph">
+                    Автоматическая загрузка справочников и классификаторов с
+                    портала Kaspi.kz:
+                  </p>
+                  <ul>
+                    <li>список городов</li>
+                    <li>точки продаж</li>
+                    <li>категории</li>
+                    <li>характеристики категорий</li>
+                  </ul>
+                </div>
+                <!-- tab__item__info -->
+                <div class="tab__item-media">
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Профили</b>
+                    <img src="img/test/tab-1-1.png" alt="Профили" />
+                  </div>
 
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Профили</b>
-                                    <img src="img/test/tab-1-1.png" alt="Профили">
-                                </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Точки продаж</b>
+                    <img src="img/test/tab-1-2.png" alt="Точки продаж" />
+                  </div>
 
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Точки продаж</b>
-                                    <img src="img/test/tab-1-2.png" alt="Точки продаж">
-                                </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Категории</b>
+                    <img src="img/test/tab-1-3.png" alt="Категории" />
+                  </div>
 
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Категории</b>
-                                    <img src="img/test/tab-1-3.png" alt="Категории">
-                                </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title"
+                      >Редактирование точки продаж</b
+                    >
+                    <img
+                      src="img/test/tab-1-4.png"
+                      alt="Редактирование точки продаж"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- tab__item -->
+              <div class="tab__item">
+                <div class="tab__item__info">
+                  <h2 class="tab__item-title">
+                    Создание и выгрузка карточек товаров из 1С на Kaspi.kz
+                  </h2>
+                  <p class="paragraph">
+                    Простое создание карточки товара на основании сведений
+                    номенклатуры: наименование, артикул, штрихкод, производитель
+                    и др.
+                  </p>
+                  <p class="paragraph">Добавление изображений товаров</p>
+                  <p class="paragraph">
+                    Проверка карточки товара с учетом требований магазина
+                    Kaspi.kz. Если обязательные поля не заполнены, система
+                    сообщит об ошибках
+                  </p>
+                  <p class="paragraph">
+                    Выгрузка проверенных карточек на портал Kaspi.kz
+                  </p>
+                </div>
+                <!-- tab__item__info -->
+                <div class="tab__item-media">
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title"
+                      >Карточка товара, картинка и характеристики</b
+                    >
+                    <img
+                      src="img/test/tab-2-1.png"
+                      alt="Карточка товара, картинка и характеристики"
+                    />
+                  </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Карточка товара</b>
+                    <img src="img/test/tab-2-2.png" alt="Карточка товара" />
+                  </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title"
+                      >Выгрузка товаров в магазин</b
+                    >
+                    <img
+                      src="img/test/tab-2-3.png"
+                      alt="Выгрузка товаров в магазин"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- tab__item -->
 
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Редактирование точки продаж</b>
-                                    <img src="img/test/tab-1-4.png" alt="Редактирование точки продаж">
-                                </div>
-                            </div>
-                        </div><!-- tab__item -->
-                        <div class="tab__item">
-                            <div class="tab__item__info">
-                                <h2 class="tab__item-title">Создание и выгрузка карточек товаров из 1С на Kaspi.kz</h2>
-                                <p class="paragraph"> Простое создание карточки товара на основании сведений
-                                    номенклатуры: наименование, артикул, штрихкод, производитель и др.
-                                </p>
-                                <p class="paragraph">Добавление изображений товаров
-                                </p>
-                                <p class="paragraph">Проверка карточки товара с учетом требований магазина Kaspi.kz.
-                                    Если обязательные поля не заполнены, система сообщит об ошибках
-                                </p>
-                                <p class="paragraph">Выгрузка проверенных карточек на портал Kaspi.kz </p>
+              <div class="tab__item">
+                <div class="tab__item__info">
+                  <h2 class="tab__item-title">
+                    Автоматическая выгрузка остатков и цен товаров
+                  </h2>
+                  <p class="paragraph">
+                    Обновление остатков и цен по настраиваемому пользователем
+                    расписанию
+                  </p>
+                  <p class="paragraph">
+                    Автоматическое снятие с продажи товаров без остатка
+                  </p>
+                  <p class="paragraph">
+                    Возможность ограничить минимальное количество выгружаемого
+                    остатка в разрезе категорий и товаров
+                  </p>
+                  <p class="paragraph">
+                    Установка индивидуальных цен для каждой торговой торговой
+                  </p>
+                </div>
+                <!-- tab__item__info -->
+                <div class="tab__item-media">
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title"
+                      >Установка цен для каждой торговой точки</b
+                    >
+                    <img
+                      src="img/test/tab-3-1.png"
+                      alt="Установка цен для каждой торговой точки"
+                    />
+                  </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Остатки и цены</b>
+                    <img src="img/test/tab-3-2.png" alt="Остатки и цены" />
+                  </div>
+                </div>
+              </div>
+              <!-- tab__item -->
+              <div class="tab__item">
+                <div class="tab__item__info">
+                  <h2 class="tab__item-title">
+                    Работа с заказами Kaspi.kz непосредственно в 1С
+                  </h2>
+                  <p class="paragraph">
+                    Интерфейс идентичный личному кабинету на Kaspi.kz
+                  </p>
+                  <p class="paragraph">
+                    Обновление статусов заказов по настраиваемому пользователем
+                    расписанию
+                  </p>
+                  <p class="paragraph">
+                    Не нужно заходить в личный кабинет Kaspi.kz, все процессы
+                    (комплектация, отмена, возврат заказа) выполняются в 1С
+                  </p>
+                  <p class="paragraph">
+                    Автоматическое отражение в учете заказа клиента Kaspi.kz
+                  </p>
+                </div>
+                <!-- tab__item__info -->
+                <div class="tab__item-media">
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Заказы клиентов</b>
+                    <img src="img/test/tab-4-1.png" alt="Заказы клиентов" />
+                  </div>
+                </div>
+              </div>
+              <!-- tab__item -->
+              <div class="tab__item">
+                <div class="tab__item__info">
+                  <h2 class="tab__item-title">
+                    Получение отзывов покупателей в 1С
+                  </h2>
+                  <p class="paragraph">
+                    Загрузка оценок покупателей с Kaspi.kz
+                  </p>
+                  <p class="paragraph">
+                    Ссылка на заказ, по которому пришел отзыв
+                  </p>
+                  <p class="paragraph">
+                    Анализ положительных и отрицательных отзывов
+                  </p>
+                </div>
+                <!-- tab__item__info -->
+                <div class="tab__item-media">
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title">Отзывы покупателей</b>
+                    <img src="img/test/tab-6-1.png" alt="Отзывы покупателей" />
+                  </div>
+                </div>
+              </div>
+              <!-- tab__item -->
+              <div class="tab__item">
+                <div class="tab__item__info">
+                  <h2 class="tab__item-title">Анализ продаж</h2>
+                  <p class="paragraph">
+                    Встроенные отчеты о продажах по контрагентам и товарам
+                  </p>
+                  <p class="paragraph">
+                    Возможность добавления отчетов по запросу заказчика
+                  </p>
+                </div>
+                <!-- tab__item__info -->
+                <div class="tab__item-media">
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title"
+                      >Отчет о продажах по товарам</b
+                    >
+                    <img
+                      src="img/test/tab-5-1.png"
+                      alt="Отчет о продажах по товарам"
+                    />
+                  </div>
+                  <div class="tab__item-img">
+                    <b class="tab__item-media-title"
+                      >Отчет о продажах по контрагентам</b
+                    >
+                    <img src="img/test/tab-5-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab__item -->
+            <div class="tab__item">
+              <div class="tab__item__info">
+                <h2 class="tab__item-title">
+                  Информирование менеджеров через Телеграм
+                </h2>
+                <p class="paragraph">
+                  Подключение собственного телеграмм-бота в 1С
+                </p>
+                <p class="paragraph">
+                  Оповещение менеджеров о поступлении новых заказов, отмене
+                  существующих заказов и др.
+                </p>
+              </div>
+              <!-- tab__item__info -->
+              <div class="tab__item-media">
+                <div class="tab__item-img">
+                  <b class="tab__item-media-title">Пользователи Телеграм</b>
+                  <img src="img/test/tab-7-1.png" alt="" />
+                </div>
+                <div class="tab__item-img">
+                  <b class="tab__item-media-title">Новый заказ в Телеграм</b>
+                  <img src="img/test/tab-7-2.png" alt="" />
+                </div>
+              </div>
+              <!-- tab__item -->
+            </div>
+            <!-- tab__items -->
+          </div>
+          <!--tab -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- product -->
+      <section class="split">
+        <div class="container">
+          <div class="heading">
+            <h2 class="heading__title heading__title--dark">
+              Преимущества модуля
+            </h2>
+            <!-- heading__title -->
+          </div>
+          <!-- heading -->
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <div class="features__body">
+            <div class="features__items">
+              <div class="features__item">
+                <h3 class="features__item-title">Автономный</h3>
+                <p class="features__item-text">
+                  Не затрагивает типовые объекты 1С и не влияет на обновления
+                </p>
+              </div>
+              <!-- features__item -->
+              <div class="features__item">
+                <h3 class="features__item-title">Удобный</h3>
+                <p class="features__item-text">
+                  Интерфейс модуля в части заказов идентичен интерфейсу личного
+                  кабинета на Kaspi.kz
+                </p>
+              </div>
+              <!-- features__item -->
+              <div class="features__item">
+                <h3 class="features__item-title">Самодостаточный</h3>
+                <p class="features__item-text">
+                  Модуль – готовое решение с возможностью доработки под
+                  индивидуальные особенности клиента
+                </p>
+              </div>
+              <!-- features__item -->
+              <div class="features__item">
+                <h3 class="features__item-title">
+                  Обеспечен сервисной поддержкой
+                </h3>
+                <p class="features__item-text">Делаем вашу работу удобней</p>
+              </div>
+              <!-- features__item -->
+              <div class="features__item">
+                <h3 class="features__item-title">Надежный</h3>
+                <p class="features__item-text">
+                  Собственная разработка специалистов, работающих с 1С более 20
+                  лет
+                </p>
+              </div>
+              <!-- features__item -->
+            </div>
+            <!-- features__items -->
+          </div>
+          <!-- features__body -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- features -->
+      <section class="review" id="review">
+        <div class="container">
+          <div class="review__body">
+            <div class="heading">
+              <h2 class="heading__title heading__title--light">
+                Отзывы клиентов
+              </h2>
+              <!-- heading__title -->
+            </div>
+            <!-- heading -->
+            <div class="review-slider">
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__1.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Сотрудники группы компаний IQ – профессионалы своего дела!
+                    Ответственное отношение руководства, высокая квалификация
+                    специалистов и постоянное внедрение новых технологий -
+                    визитная карточка Компании. Желаем успехов и новых
+                    достижений.
+                  </p>
+                  <b class="review-slider__name">Абай Бек</b>
+                  <span class="review-slider__status"
+                    >Бизнес – тренер. Астана</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                            </div><!-- tab__item__info -->
-                            <div class="tab__item-media">
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Карточка товара, картинка и характеристики</b>
-                                    <img src="img/test/tab-2-1.png" alt="Карточка товара, картинка и характеристики">
-                                </div>
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Карточка товара</b>
-                                    <img src="img/test/tab-2-2.png" alt="Карточка товара">
-                                </div>
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Выгрузка товаров в магазин</b>
-                                    <img src="img/test/tab-2-3.png" alt="Выгрузка товаров в магазин">
-                                </div>
-                            </div>
-                        </div><!-- tab__item -->
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__3.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    С нашими любимыми партнерами IQ Trade мы, компания 1С-Батыр,
+                    работаем уже больше 10 лет. За это время мы вместе росли,
+                    развивались и завоевывали доверие друг друга и других
+                    партнеров. За все время сотрудничества IQ показали себя как
+                    добросовестные, честные и высококвалифицированные "ребята".
+                    Очень приятно иметь с ними дело!
+                  </p>
+                  <b class="review-slider__name">Ирина Мороз</b>
+                  <span class="review-slider__status"
+                    >Руководитель отдела продаж ТОО "1С-Батыр"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="tab__item">
-                            <div class="tab__item__info">
-                                <h2 class="tab__item-title">Автоматическая выгрузка остатков и цен товаров</h2>
-                                <p class="paragraph">Обновление остатков и цен по настраиваемому пользователем
-                                    расписанию</p>
-                                <p class="paragraph">Автоматическое снятие с продажи товаров без остатка</p>
-                                <p class="paragraph">Возможность ограничить минимальное количество выгружаемого остатка
-                                    в разрезе категорий и товаров</p>
-                                <p class="paragraph">Установка индивидуальных цен для каждой торговой торговой</p>
-                            </div><!-- tab__item__info -->
-                            <div class="tab__item-media">
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Установка цен для каждой торговой точки</b>
-                                    <img src="img/test/tab-3-1.png" alt="Установка цен для каждой торговой точки">
-                                </div>
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Остатки и цены</b>
-                                    <img src="img/test/tab-3-2.png" alt="Остатки и цены">
-                                </div>
-                            </div>
-                        </div><!-- tab__item -->
-                        <div class="tab__item">
-                            <div class="tab__item__info">
-                                <h2 class="tab__item-title">Работа с заказами Kaspi.kz непосредственно в 1С</h2>
-                                <p class="paragraph">Интерфейс идентичный личному кабинету на Kaspi.kz</p>
-                                <p class="paragraph">Обновление статусов заказов по настраиваемому пользователем
-                                    расписанию</p>
-                                <p class="paragraph">Не нужно заходить в личный кабинет Kaspi.kz, все процессы
-                                    (комплектация, отмена, возврат заказа) выполняются в 1С</p>
-                                <p class="paragraph">Автоматическое отражение в учете заказа клиента Kaspi.kz </p>
-                            </div><!-- tab__item__info -->
-                            <div class="tab__item-media">
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Заказы клиентов</b>
-                                    <img src="img/test/tab-4-1.png" alt="Заказы клиентов">
-                                </div>
-                            </div>
-                        </div><!-- tab__item -->
-                        <div class="tab__item">
-                            <div class="tab__item__info">
-                                <h2 class="tab__item-title">Получение отзывов покупателей в 1С</h2>
-                                <p class="paragraph">Загрузка оценок покупателей с Kaspi.kz</p>
-                                <p class="paragraph">Ссылка на заказ, по которому пришел отзыв</p>
-                                <p class="paragraph">Анализ положительных и отрицательных отзывов</p>
-                            </div><!-- tab__item__info -->
-                            <div class="tab__item-media">
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Отзывы покупателей</b>
-                                    <img src="img/test/tab-6-1.png" alt="Отзывы покупателей">
-                                </div>
-                            </div>
-                        </div><!-- tab__item -->
-                        <div class="tab__item">
-                            <div class="tab__item__info">
-                                <h2 class="tab__item-title">Анализ продаж</h2>
-                                <p class="paragraph">Встроенные отчеты о продажах по контрагентам и товарам</p>
-                                <p class="paragraph">Возможность добавления отчетов по запросу заказчика</p>
-                            </div><!-- tab__item__info -->
-                            <div class="tab__item-media">
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Отчет о продажах по товарам</b>
-                                    <img src="img/test/tab-5-1.png" alt="Отчет о продажах по товарам">
-                                </div>
-                                <div class="tab__item-img">
-                                    <b class="tab__item-media-title">Заголовок для изображения 2</b>
-                                    <img src="img/test/tab-5-2.png" alt="">
-                                </div>
-                            </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__5.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Работаем с группой компаний IQ уже не один год, и когда
+                    появилась потребность в разработке интернет-магазина,
+                    обратились к компании IQ. Партнерство превзошло все наши
+                    ожидания. Работы сданы вовремя, все качественно, все на
+                    высоком профессиональном уровне. Приятный и вежливый
+                    персонал всегда на связи. Нам очень понравилась работа с IQ.
+                    Любой вопрос или задача решаются максимально в пользу
+                    клиента. Успеха и процветания компании!
+                  </p>
+                  <b class="review-slider__name">Демидова Анна</b>
+                  <span class="review-slider__status"
+                    >Интернет-магазин "Хоккей Плюс"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        </div>
-                    </div><!-- tab__item -->
-                    <div class="tab__item">
-                        <div class="tab__item__info">
-                            <h2 class="tab__item-title">Информирование менеджеров через Телеграм</h2>
-                            <p class="paragraph">Подключение собственного телеграмм-бота в 1С</p>
-                            <p class="paragraph">Оповещение менеджеров о поступлении новых заказов, отмене существующих
-                                заказов и др.</p>
-                        </div><!-- tab__item__info -->
-                        <div class="tab__item-media">
-                            <div class="tab__item-img">
-                                <b class="tab__item-media-title">Заголовок для изображения 1</b>
-                                <img src="img/test/tab-7-1.png" alt="">
-                            </div>
-                            <div class="tab__item-img">
-                                <b class="tab__item-media-title">Заголовок для изображения 2</b>
-                                <img src="img/test/tab-7-2.png" alt="">
-                            </div>
-                </div><!-- tab__item -->
-            </div><!-- tab__items -->
-            </div><!--tab -->
-            </div><!-- container -->
-        </section><!-- product -->
-        <section class="features" id="features">
-            <div class="container">
-                <div class="features__body">
-                    <div class="features__items">
-                        <div class="features__item">
-                            <h3 class="features__item-title">Автономный</h3>
-                            <p class="features__item-text">Не затрагивает типовые объекты 1С и не влияет на обновления
-                            </p>
-                        </div><!-- features__item -->
-                        <div class="features__item">
-                            <h3 class="features__item-title">Удобный</h3>
-                            <p class="features__item-text">Интерфейс модуля в части заказов идентичен интерфейсу личного
-                                кабинета на Kaspi.kz </p>
-                        </div><!-- features__item -->
-                        <div class="features__item">
-                            <h3 class="features__item-title">Самодостаточный</h3>
-                            <p class="features__item-text">Модуль – готовое решение с возможностью доработки под
-                                индивидуальные особенности клиента</p>
-                        </div><!-- features__item -->
-                        <div class="features__item">
-                            <h3 class="features__item-title">Обеспечен сервисной поддержкой</h3>
-                            <p class="features__item-text">Делаем вашу работу удобней</p>
-                        </div><!-- features__item -->
-                        <div class="features__item">
-                            <h3 class="features__item-title">Надежный</h3>
-                            <p class="features__item-text">Собственная разработка специалистов, работающих с 1С более 20
-                                лет</p>
-                        </div><!-- features__item -->
-                    </div><!-- features__items -->
-                </div><!-- features__body -->
-            </div><!-- container -->
-        </section><!-- features -->
-        <section class="review" id="review">
-            <div class="container">
-                <div class="review__body">
-                    <div class="heading">
-                        <h2 class="heading__title heading__title--light">Отзывы клиентов</h2><!-- heading__title -->
-                    </div><!-- heading -->
-                    <div class="review-slider">
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__1.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Сотрудники группы компаний IQ – профессионалы своего
-                                    дела!
-                                    Ответственное отношение руководства, высокая квалификация специалистов и постоянное
-                                    внедрение новых технологий - визитная карточка Компании. Желаем успехов и новых
-                                    достижений.</p>
-                                <b class="review-slider__name">Абай Бек</b>
-                                <span class="review-slider__status">Бизнес – тренер. Астана</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__6.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    За время совместной работы сотрудники компании IQ показали
+                    себя высокими профессионалами, которые следят за качеством
+                    выполняемой работы и учитывают пожелания Заказчика.
+                  </p>
+                  <b class="review-slider__name">Анар Сабитов</b>
+                  <span class="review-slider__status"
+                    >Заместитель директора ТОО "KazLogySystem"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__3.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">С нашими любимыми партнерами IQ Trade мы, компания
-                                    1С-Батыр, работаем уже больше 10 лет. За это время мы вместе росли, развивались и
-                                    завоевывали доверие друг друга и других партнеров. За все время сотрудничества IQ
-                                    показали себя как добросовестные, честные и высококвалифицированные "ребята". Очень
-                                    приятно иметь с ними дело!</p>
-                                <b class="review-slider__name">Ирина Мороз</b>
-                                <span class="review-slider__status">Руководитель отдела продаж ТОО "1С-Батыр"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__9.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Наше сотрудничество с компанией IQ укладывается в небольшие
+                    временные рамки, но на данный момент мы очень довольны
+                    результатами работы высококвалифицированных, креативных,
+                    добросовестных, лояльных сотрудников компании, которые
+                    работают на результат и четко соблюдают установленные сроки.
+                    На рынке подобных услуг огромная конкуренция, и мы очень
+                    рады что сделали правильный выбор обратившись в IQ.
+                  </p>
+                  <b class="review-slider__name">Вихляева Наталья</b>
+                  <span class="review-slider__status"
+                    >Генеральный директор ТОО "Smartex Technology"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__5.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Работаем с группой компаний IQ уже не один год, и когда
-                                    появилась потребность в разработке интернет-магазина, обратились к компании IQ.
-                                    Партнерство превзошло все наши ожидания. Работы сданы вовремя, все качественно, все
-                                    на высоком профессиональном уровне. Приятный и вежливый персонал всегда на связи.
-                                    Нам очень понравилась работа с IQ. Любой вопрос или задача решаются максимально в
-                                    пользу клиента. Успеха и процветания компании!</p>
-                                <b class="review-slider__name">Демидова Анна</b>
-                                <span class="review-slider__status">Интернет-магазин "Хоккей Плюс"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__10.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Сотрудниками ТОО «IQ Plus» оказана колоссальная
+                    методологическая поддержка для реализации поставленных
+                    Заказчиком задач, а именно создание дополнительного раздела
+                    «Бюджетирование» и формирования дополнительной финансовой
+                    отчетности с расшифровками. В процессе работы Исполнителем
+                    были внесены необходимые изменения и дополнения в
+                    «1С.Бухгалтерия» с учетом специфики деятельности Заказчика.
+                  </p>
+                  <b class="review-slider__name">Татьяна Буйнова</b>
+                  <span class="review-slider__status">ТОО «DALA MINERALS»</span>
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__6.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">За время совместной работы сотрудники компании IQ
-                                    показали себя высокими профессионалами, которые следят за качеством выполняемой
-                                    работы и учитывают пожелания Заказчика.</p>
-                                <b class="review-slider__name">Анар Сабитов</b>
-                                <span class="review-slider__status">Заместитель директора ТОО "KazLogySystem"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__11.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Молодцы ребята! Хорошо работают, удачи в новых проектах!
+                  </p>
+                  <b class="review-slider__name">Машбаев Серик</b>
+                  <span class="review-slider__status"
+                    >Менеджер ТОО "Облачные решения"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__9.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Наше сотрудничество с компанией IQ укладывается в
-                                    небольшие временные рамки, но на данный момент мы очень довольны результатами работы
-                                    высококвалифицированных, креативных, добросовестных, лояльных сотрудников компании,
-                                    которые работают на результат и четко соблюдают установленные сроки. На рынке
-                                    подобных услуг огромная конкуренция, и мы очень рады что сделали правильный выбор
-                                    обратившись в IQ.</p>
-                                <b class="review-slider__name">Вихляева Наталья</b>
-                                <span class="review-slider__status">Генеральный директор ТОО "Smartex Technology"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__7.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Долгие годы работали с компанией IQ по сопровождению
+                    программного продукта 1 С «Бухгалтерия». Выражаю
+                    признательность команде компании за профессионализм и
+                    оперативность, зарекомендовали себя надежным партнером,
+                    качественно и внимательно прислушиваются к требованиям
+                    Заказчика. Отдельное спасибо Ильчуку Александру, он является
+                    редчайшим примером идеального партнера, за все время
+                    сотрудничества не было никаких сбоев и ошибок, все всегда
+                    вовремя и четко.
+                  </p>
+                  <b class="review-slider__name">Ибраева Шолпан</b>
+                  <span class="review-slider__status"
+                    >Заместитель руководителя управления экономики и финансов
+                    РГП РЦПИ МЮ РК</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__10.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Сотрудниками ТОО «IQ Plus» оказана колоссальная
-                                    методологическая поддержка для реализации поставленных Заказчиком задач, а именно
-                                    создание дополнительного раздела «Бюджетирование» и формирования дополнительной
-                                    финансовой отчетности с расшифровками.
-                                    В процессе работы Исполнителем были внесены необходимые изменения и дополнения в
-                                    «1С.Бухгалтерия» с учетом специфики деятельности Заказчика.
-                                </p>
-                                <b class="review-slider__name">Татьяна Буйнова</b>
-                                <span class="review-slider__status">ТОО «DALA MINERALS»</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__8.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    ТОО "IQ Plus" сопровождали наше предприятие на протяжении
+                    нескольких лет. За время нашей совместной работы сотрудники
+                    компании подтвердили свой высокий профессиональный уровень и
+                    оперативность в решении проблем. Поставленные перед ними
+                    задачи выполняли быстро и в срок. Специалисты по работе с
+                    клиентами квалифицированны и доброжелательны. Рекомендую ТОО
+                    "IQ Plus" как надежного и добросовестного партнёра и
+                    надеемся на дальнейшее плодотворное сотрудничество.
+                  </p>
+                  <b class="review-slider__name">Смагулова Ильмира</b>
+                  <span class="review-slider__status"
+                    >Главный бухгалтер РГП "НИИ травматологии и ортопедии" МЗ
+                    РК</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__11.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Молодцы ребята! Хорошо работают, удачи в новых проектах!
-                                </p>
-                                <b class="review-slider__name">Машбаев Серик</b>
-                                <span class="review-slider__status">Менеджер ТОО "Облачные решения"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__4.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    Компания IQ, одна из тех, что давно на рынке Астаны и всего
+                    Казахстана. За все это время, а это около 20-ти лет,
+                    завоевали доверие и признание от своих клиентов и партнеров,
+                    своим постоянством и ответсвенным отношением ко всему, что
+                    делают. Хочу сказать всему коллективу компании и лично его
+                    директору Евгению спасибо, за Ваш труд, за Ваше отношение,
+                    за честность и преданность своим партнерам, клиентам и
+                    своему делу!!! Успехов Вам и процветания не только в
+                    Казахстане, но и за их пределами.
+                  </p>
+                  <b class="review-slider__name">Жумабекова Асемгуль</b>
+                  <span class="review-slider__status"
+                    >Директор ТОО "1С-Батыр"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
 
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__7.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Долгие годы работали с компанией IQ по сопровождению
-                                    программного продукта 1 С «Бухгалтерия». Выражаю признательность команде компании за
-                                    профессионализм и оперативность, зарекомендовали себя надежным партнером,
-                                    качественно и внимательно прислушиваются к требованиям Заказчика. Отдельное спасибо
-                                    Ильчуку Александру, он является редчайшим примером идеального партнера, за все время
-                                    сотрудничества не было никаких сбоев и ошибок, все всегда вовремя и четко.</p>
-                                <b class="review-slider__name">Ибраева Шолпан</b>
-                                <span class="review-slider__status">Заместитель руководителя управления экономики и
-                                    финансов РГП РЦПИ МЮ РК</span>
-                            </div><!-- review-slider__item -->
-                        </div>
-
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__8.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">ТОО "IQ Plus" сопровождали наше предприятие на протяжении
-                                    нескольких лет. За время нашей совместной работы сотрудники компании подтвердили
-                                    свой высокий профессиональный уровень и оперативность в решении проблем.
-                                    Поставленные перед ними задачи выполняли быстро и в срок. Специалисты по работе с
-                                    клиентами квалифицированны и доброжелательны. Рекомендую ТОО "IQ Plus" как надежного
-                                    и добросовестного партнёра и надеемся на дальнейшее плодотворное сотрудничество.</p>
-                                <b class="review-slider__name">Смагулова Ильмира</b>
-                                <span class="review-slider__status">Главный бухгалтер РГП "НИИ травматологии и
-                                    ортопедии" МЗ РК</span>
-                            </div><!-- review-slider__item -->
-                        </div>
-
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__4.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">Компания IQ, одна из тех, что давно на рынке Астаны и
-                                    всего Казахстана. За все это время, а это около 20-ти лет, завоевали доверие и
-                                    признание от своих клиентов и партнеров, своим постоянством и ответсвенным
-                                    отношением ко всему, что делают. Хочу сказать всему коллективу компании и лично его
-                                    директору Евгению спасибо, за Ваш труд, за Ваше отношение, за честность и
-                                    преданность своим партнерам, клиентам и своему делу!!! Успехов Вам и процветания не
-                                    только в Казахстане, но и за их пределами.</p>
-                                <b class="review-slider__name">Жумабекова Асемгуль</b>
-                                <span class="review-slider__status">Директор ТОО "1С-Батыр"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
-
-                        <div class="review-slider__wrap">
-                            <div class="review-slider__item">
-                                <div class="review-slider__avatar">
-                                    <img src="img/avatar__12.png" alt="Аватар клиента" width="130" height="130">
-                                </div><!-- review-slider__avatar -->
-                                <i class="las la-quote-right"></i>
-                                <p class="review-slider__text">С давних пор, являемся партнёрами группы компаний IQ. И
-                                    если бы меня спросили, как это сегодня принято, порекомендовал
-                                    ли я этих ребят, своим друзьям, я бы ответил однозначно - да! Компания существует
-                                    уже много лет, и каждый сотрудник, начиная с руководителя, профессионал своего дела!
-                                    Очень отзывчивые. И индивидуальный подход к клиенту, это у них по умолчанию)
-                                    Так держать, ребята! Успехов в бизнесе</p>
-                                <b class="review-slider__name">Артур Арсланов</b>
-                                <span class="review-slider__status">Генеральный директор ТОО "KAIR-Corporation"</span>
-                            </div><!-- review-slider__item -->
-                        </div>
-                    </div><!-- review-slider -->
-                </div><!-- review__body -->
-            </div><!-- container -->
-        </section><!-- review -->
-        <section class="we-are">
-            <div class="container">
-                <div class="we-are__body">
-                    <div class="we-are__media">
-                    </div><!-- we-are__media -->
-                    <div class="we-are__info">
-                        <b class="welcome">Добро пожаловать!</b>
-                        <h2 class="we-are__title">Группа компаний IQ</h2>
-                        <p class="paragraph">Группа компаний IQ - это не просто коллектив состоящий из профессионалов
-                            своего дела. Это команда в квадрате! Наша компания является официальным партнером Фирмы «1С»
-                            с 2008 года. Мы оказываем полный спектр услуг по продаже, доработке, внедрению, обучению и
-                            сопровождению программных продуктов Фирмы «1С» в Астане, а также осуществляем поставки
-                            программного обеспечения как сторонних производителей, так и собственные разработки.</p>
-                        <!-- paragraph -->
-                        <p class="paragraph">В сферу наших интересов входят работы по интеграции web-сайтов и
-                            интернет-магазинов с 1С, а также работы по поддержке и их продвижению. Мы являемся
-                            интернет-агентством полного цикла. Это означает, что мы профессионально подходим к
-                            выполнению поставленной задачи и реализуем ее от идеи до готового интернет-решения.</p>
-                        <p class="paragraph">Утверждается, что большинство систем работают лучше всего, если они
-                            остаются простыми, а не усложняются. Поэтому простота должна быть одной из ключевых целей.
-                        </p>
-                        <span class="we-are__experience"><b>20</b> <br> Лет опыта</span>
-                    </div><!-- we-are__info -->
-                </div><!-- we-are__body -->
-            </div><!-- container -->
-        </section><!-- we-are -->
-        <section class="prices" id="prices">
-            <div class="container">
-                <div class="prices__body">
-                    <div class="heading">
-                        <h2 class="heading__title heading__title--dark">Тарифы на подписку</h2><!-- heading__title -->
-                    </div><!-- heading -->
-                    <div class="price-items">
-                        <div class="price-item">
-                            <span class="price-item__title">1 МЕСЯЦ</span>
-                            <b class="price-item__cost">Бесплатно</b>
-                            <ul class="price-item__list">
-                                <li>Установка и настройка</li>
-                                <li>Обучение пользователей</li>
-                            </ul>
-                            <button class="btn btn--primary btn--price">Выбрать тариф</button><!-- btn btn--primary -->
-                        </div><!-- price-item -->
-                        <div class="price-item price-item--outline">
-                            <span class="ribbon">Хит</span><!-- ribbon -->
-                            <span class="price-item__title">6 МЕСЯЦЕВ</span>
-                            <b class="price-item__cost">200 000 ₸</b>
-                            <ul class="price-item__list">
-                                <li>Установка и настройка</li>
-                                <li>Обучение пользователей</li>
-                                <li>Обновление модуля при выпуске нового релиза</li>
-                                <li>Обеспечение сервисной поддержки</li>
-                            </ul>
-                            <button class="btn btn--primary btn--price">Выбрать тариф</button><!-- btn btn--primary -->
-                        </div><!-- price-item -->
-                        <div class="price-item">
-                            <span class="price-item__title">12 МЕСЯЦЕВ</span>
-                            <b class="price-item__cost">300 000 ₸</b>
-                            <ul class="price-item__list">
-                                <li>Установка и настройка</li>
-                                <li>Обучение пользователей</li>
-                                <li>Обновление модуля при выпуске нового релиза</li>
-                                <li>Обеспечение сервисной поддержки</li>
-                            </ul>
-                            <button class="btn btn--primary btn--price">Выбрать тариф</button><!-- btn btn--primary -->
-                        </div><!-- price-item -->
-                    </div><!-- price-items -->
-                </div><!-- prices__body -->
-            </div><!-- container -->
-        </section><!-- prices -->
-        <section class="contacts" id="contacts">
-            <div class="container">
-                <div class="contacts__body">
-                    <div class="heading">
-                        <h2 class="heading__title heading__title--dark">Подключить модуль</h2>
-                    </div><!-- heading -->
-                    <div class="content">
-                        <div class="right-side">
-                            <div class="topic-text">Оформить заявку на подключение модуля</div>
-                            <form action="#" name="form">
-                                <div class="input-box">
-                                    <input type="text" placeholder="Ваше имя" name="name" id="name" />
-                                    <label for="name">Пожалуйста, используйте Ваше настоящее имя</label>
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" placeholder="Введите email" name="email" id="email"
-                                        data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" />
-                                    <label for="email">В формате: name@mail.ru</label>
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" placeholder="Введите телефон" name="phone" id="phone"
-                                        data-reg="^((\+7|7|8)+([0-9]){10})$" />
-                                    <label for="phone">В формате: 8 800 000 00 00 или 7 800 000 00 00</label>
-                                </div>
-                                <div class="input-box message-box">
-                                    <textarea placeholder="Сообщение"></textarea>
-                                </div>
-                                <input type="submit" id="button" class="btn btn--primary" value="Отправить заявку" />
-                            </form>
-                        </div>
-                    </div>
-                    <div class="contacts__info">
-                        <span class="contacts__text">По вопросам подлключения <a
-                                href="mailto:1ckaspi@i-q.kz">1ckaspi@i-q.kz</a></span>
-                    </div><!-- contacts__info -->
-                </div><!-- contacts__body -->
-            </div><!-- container -->
-        </section><!-- contacts -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footer__body">
-                    ©
-                    <script>document.write(new Date().getFullYear())</script> Группа компаний IQ
-                </div><!-- footer__body -->
-            </div><!-- container -->
-        </footer>
+              <div class="review-slider__wrap">
+                <div class="review-slider__item">
+                  <div class="review-slider__avatar">
+                    <img
+                      src="img/avatar__12.png"
+                      alt="Аватар клиента"
+                      width="130"
+                      height="130"
+                    />
+                  </div>
+                  <!-- review-slider__avatar -->
+                  <i class="las la-quote-right"></i>
+                  <p class="review-slider__text">
+                    С давних пор, являемся партнёрами группы компаний IQ. И если
+                    бы меня спросили, как это сегодня принято, порекомендовал ли
+                    я этих ребят, своим друзьям, я бы ответил однозначно - да!
+                    Компания существует уже много лет, и каждый сотрудник,
+                    начиная с руководителя, профессионал своего дела! Очень
+                    отзывчивые. И индивидуальный подход к клиенту, это у них по
+                    умолчанию) Так держать, ребята! Успехов в бизнесе
+                  </p>
+                  <b class="review-slider__name">Артур Арсланов</b>
+                  <span class="review-slider__status"
+                    >Генеральный директор ТОО "KAIR-Corporation"</span
+                  >
+                </div>
+                <!-- review-slider__item -->
+              </div>
+            </div>
+            <!-- review-slider -->
+          </div>
+          <!-- review__body -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- review -->
+      <section class="we-are">
+        <div class="container">
+          <div class="we-are__body">
+            <div class="we-are__media"></div>
+            <!-- we-are__media -->
+            <div class="we-are__info">
+              <b class="welcome">Добро пожаловать!</b>
+              <h2 class="we-are__title">Группа компаний IQ</h2>
+              <p class="paragraph">
+                Группа компаний IQ - это не просто коллектив состоящий из
+                профессионалов своего дела. Это команда в квадрате! Наша
+                компания является официальным партнером Фирмы «1С» с 2008 года.
+                Мы оказываем полный спектр услуг по продаже, доработке,
+                внедрению, обучению и сопровождению программных продуктов Фирмы
+                «1С» в Астане, а также осуществляем поставки программного
+                обеспечения как сторонних производителей, так и собственные
+                разработки.
+              </p>
+              <!-- paragraph -->
+              <p class="paragraph">
+                В сферу наших интересов входят работы по интеграции web-сайтов и
+                интернет-магазинов с 1С, а также работы по поддержке и их
+                продвижению. Мы являемся интернет-агентством полного цикла. Это
+                означает, что мы профессионально подходим к выполнению
+                поставленной задачи и реализуем ее от идеи до готового
+                интернет-решения.
+              </p>
+              <p class="paragraph">
+                Утверждается, что большинство систем работают лучше всего, если
+                они остаются простыми, а не усложняются. Поэтому простота должна
+                быть одной из ключевых целей.
+              </p>
+              <span class="we-are__experience"
+                ><b>20</b> <br />
+                Лет опыта</span
+              >
+            </div>
+            <!-- we-are__info -->
+          </div>
+          <!-- we-are__body -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- we-are -->
+      <section class="prices" id="prices">
+        <div class="container">
+          <div class="prices__body">
+            <div class="heading">
+              <h2 class="heading__title heading__title--dark">
+                Тарифы на подписку
+              </h2>
+              <!-- heading__title -->
+            </div>
+            <!-- heading -->
+            <div class="price-items">
+              <div class="price-item">
+                <span class="price-item__title">1 МЕСЯЦ</span>
+                <b class="price-item__cost">Бесплатно</b>
+                <ul class="price-item__list">
+                  <li>Установка и настройка</li>
+                  <li>Обучение пользователей</li>
+                </ul>
+                <button class="btn btn--primary btn--price">
+                  Выбрать тариф</button
+                ><!-- btn btn--primary -->
+              </div>
+              <!-- price-item -->
+              <div class="price-item price-item--outline">
+                <span class="ribbon">Хит</span
+                ><!-- ribbon -->
+                <span class="price-item__title">6 МЕСЯЦЕВ</span>
+                <b class="price-item__cost">200 000 ₸</b>
+                <ul class="price-item__list">
+                  <li>Установка и настройка</li>
+                  <li>Обучение пользователей</li>
+                  <li>Обновление модуля при выпуске нового релиза</li>
+                  <li>Обеспечение сервисной поддержки</li>
+                </ul>
+                <button class="btn btn--primary btn--price">
+                  Выбрать тариф</button
+                ><!-- btn btn--primary -->
+              </div>
+              <!-- price-item -->
+              <div class="price-item">
+                <span class="price-item__title">12 МЕСЯЦЕВ</span>
+                <b class="price-item__cost">300 000 ₸</b>
+                <ul class="price-item__list">
+                  <li>Установка и настройка</li>
+                  <li>Обучение пользователей</li>
+                  <li>Обновление модуля при выпуске нового релиза</li>
+                  <li>Обеспечение сервисной поддержки</li>
+                </ul>
+                <button class="btn btn--primary btn--price">
+                  Выбрать тариф</button
+                ><!-- btn btn--primary -->
+              </div>
+              <!-- price-item -->
+            </div>
+            <!-- price-items -->
+          </div>
+          <!-- prices__body -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- prices -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__body">
+            <div class="heading">
+              <h2 class="heading__title heading__title--dark">
+                Подключить модуль
+              </h2>
+            </div>
+            <!-- heading -->
+            <div class="content">
+              <div class="right-side">
+                <div class="topic-text">
+                  Оформить заявку на подключение модуля
+                </div>
+                <form action="#" name="form">
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Ваше имя"
+                      name="name"
+                      id="name"
+                    />
+                    <label for="name"
+                      >Пожалуйста, используйте Ваше настоящее имя</label
+                    >
+                  </div>
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Введите email"
+                      name="email"
+                      id="email"
+                      data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                    />
+                    <label for="email">В формате: name@mail.ru</label>
+                  </div>
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      placeholder="Введите телефон"
+                      name="phone"
+                      id="phone"
+                      data-reg="^((\+7|7|8)+([0-9]){10})$"
+                    />
+                    <label for="phone"
+                      >В формате: 8 800 000 00 00 или 7 800 000 00 00</label
+                    >
+                  </div>
+                  <div class="input-box message-box">
+                    <textarea placeholder="Сообщение"></textarea>
+                  </div>
+                  <input
+                    type="submit"
+                    id="button"
+                    class="btn btn--primary"
+                    value="Отправить заявку"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="contacts__info">
+              <span class="contacts__text"
+                >По вопросам подлключения
+                <a href="mailto:1ckaspi@i-q.kz">1ckaspi@i-q.kz</a></span
+              >
+            </div>
+            <!-- contacts__info -->
+          </div>
+          <!-- contacts__body -->
+        </div>
+        <!-- container -->
+      </section>
+      <!-- contacts -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Группа компаний IQ
+          </div>
+          <!-- footer__body -->
+        </div>
+        <!-- container -->
+      </footer>
     </main>
     <script src="js/app.js"></script>
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
     <script type="module">
-        var slider = tns({
-            container: '.review-slider',
+      var slider = tns({
+        container: ".review-slider",
+        items: 2,
+        slideBy: "1",
+        autoplay: true,
+        gutter: 48,
+        mouseDrag: true,
+        arrowKeys: false,
+        controls: false,
+        autoplayButton: false,
+        nav: false,
+        autoplayButtonOutput: false,
+        responsive: {
+          340: {
+            items: 1,
+          },
+          640: {
             items: 2,
-            slideBy: '1',
-            autoplay: true,
-            gutter: 48,
-            mouseDrag: true,
-            arrowKeys: false,
-            controls: false,
-            autoplayButton: false,
-            nav: false,
-            autoplayButtonOutput: false,
-            responsive: {
-                340: {
-                    items: 1
-                },
-                640: {
-                    items: 2
-                }
-            }
-        });
+          },
+        },
+      });
     </script>
-</body>
+  </body>
 </html>
